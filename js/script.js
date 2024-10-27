@@ -5,24 +5,38 @@ var button = document.querySelector("button");
 button.addEventListener("click",function(){
     if(input.value <=0){
         console.log("Age can not be Zero or Negative value")
+        document.write(`<h1>Age can not be Zero or Negative value</h1>`)
+        document.write(`<a href="./start.html">GO Back</a>`)
     }
     else if(input.value > 0 && input.value <= 1){
         console.log("You are Infant") // Infants: 0 to below 1 year
+        document.write(`<h1>You are Infant</h1>`)
+        document.write(`<a href="./start.html">GO Back</a>`)
     }
     else if(input.value > 1 && input.value <= 3){
         console.log("You are Toddler") // Toddlers: 1-3 years
+        document.write(`<h1>You are Toddler</h1>`)
+        document.write(`<a href="./start.html">GO Back</a>`)
     }
     else if(input.value > 3 && input.value <= 5){
         console.log("You are Preschooler") // Preschoolers: 4-5 years
+        document.write(`<h1>You are Preschooler</h1>`)
+        document.write(`<a href="./start.html">GO Back</a>`)
     }
     else if(input.value > 5 && input.value < 13){
         console.log("You are Child") // School-age children: 6 below 13 years
+        document.write(`<h1>You are Child</h1>`)
+        document.write(`<a href="./start.html">GO Back</a>`)
     }
     else if(input.value >= 13 && input.value < 18){
         console.log("You are Teenage") // teenagers are 13 below 18
+        document.write(`<h1>You are Teenage</h1>`)
+        document.write(`<a href="./start.html">GO Back</a>`)
     }
     else{
         console.log("You are Adult")
+        document.write(`<h1>You are Adult</h1>`)
+        document.write(`<a href="./start.html">GO Back</a>`)
 
     }
 })
