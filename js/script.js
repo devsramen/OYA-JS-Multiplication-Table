@@ -64,14 +64,15 @@ singleBtn.addEventListener("click", function(){
 rangeBtn.addEventListener("click", function(){
     var startValue = inputRangeForm.value;
     var endValue = inputRangeTo.value;
-    for(k=startValue; k<=endValue;k++){
-        
+    document.write(`<a href="./start.html">GO Back</a> <br><br>`)
+    for(k=startValue; k<=endValue;k++){        
         document.write(`<b>Multiplication Table for ${k}</b>` + "<br>")
         for(i=1; i<=10;i++){
             document.write(k + " x " + i + " = " + k*i + "<br>")
         }
         document.write("<br>")
     }
+    document.write(`<a href="./start.html">GO Back</a>`)
 })
 
 
