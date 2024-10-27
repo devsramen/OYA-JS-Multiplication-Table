@@ -57,7 +57,7 @@ singleBtn.addEventListener("click", function(){
     for(i=1; i<=10;i++){
         document.write(number + " x " + i + " = " + number*i + "<br>")
     }
-    
+    document.write(`<a href="./start.html" style="background-color: green; color: white; font-weight: 600; border-radius: 10px; padding: 15px; text-decoration: none; box-sizing: border-box; ">GO Back</a>`)
 })
 
 // For Multiple Button
