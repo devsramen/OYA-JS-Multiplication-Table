@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 0 50px;
+}
+input{
+    font-size: 50px;
+    padding: 5px;
+}
+button{
+    font-size: 50px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    text-transform: capitalize;
+}
+h1{
+    color: rgb(77, 76, 76);
+    margin-top: 50px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+h1 strong{
+    font-size: 40px;
+    color: rgb(51, 0, 146);
+}
+.heading{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 0.80;
+    margin: 0;
+    padding: 0;
+}
+
+
+#end {
+    width: 96vw;
+    height: 100vh;
+    display: grid;
+    margin: 0 auto;
+}
+.end{
+    place-self: center;
+    font-size: 150px;
+    color: darkgreen;
+}
+a{
+    color: darkmagenta;
+    text-decoration: none;
+}
