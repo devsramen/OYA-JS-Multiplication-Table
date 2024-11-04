@@ -65,15 +65,33 @@ singleBtn.addEventListener("click", function(){
 rangeBtn.addEventListener("click", function(){
     var startValue = Number(inputRangeForm.value);
     var endValue = Number(inputRangeTo.value);
-    document.write(`<a href="./start.html" style="background-color: green; color: white; font-weight: 600; border-radius: 5px; padding: 15px; text-decoration: none; box-sizing: border-box; ">GO Back</a> <br><br>`)
-    for(k=startValue; k<=endValue;k++){        
-        document.write(`<b>Multiplication Table for ${k}</b>` + "<br>")
-        for(i=1; i<=10;i++){
-            document.write(k + " x " + i + " = " + k*i + "<br>")
+    if(startValue < endValue){
+        document.write(`<a href="./start.html" style="background-color: green; color: white; font-weight: 600; border-radius: 5px; padding: 15px; text-decoration: none; box-sizing: border-box; ">GO Back</a> <br><br>`)
+        for(k=startValue; k<=endValue;k++){        
+            document.write(`<b>Multiplication Table for ${k}</b>` + "<br>")
+            for(i=1; i<=10;i++){
+                document.write(k + " x " + i + " = " + k*i + "<br>")
+            }
+            document.write("<br>")
         }
-        document.write("<br>")
+        document.write(`<a href="./start.html" style="background-color: green; color: white; font-weight: 600; border-radius: 5px; padding: 15px; text-decoration: none; box-sizing: border-box; ">GO Back</a>`)
+    }else{
+        document.write(`<a href="./start.html" style="background-color: green; color: white; font-weight: 600; border-radius: 5px; padding: 15px; text-decoration: none; box-sizing: border-box; ">GO Back</a> <br><br>`)
+        for(let k = startValue; k >= endValue; k--){        
+            document.write(`<b>Multiplication Table for ${k}</b>` + "<br>")
+            for(let i = 1; i <= 10; i++){
+                document.write(k + " x " + i + " = " + k*i + "<br>")
+            }
+            document.write("<br>")
+        }
+        document.write(`<a href="./start.html" style="background-color: green; color: white; font-weight: 600; border-radius: 5px; padding: 15px; text-decoration: none; box-sizing: border-box; ">GO Back</a>`)
     }
-    document.write(`<a href="./start.html" style="background-color: green; color: white; font-weight: 600; border-radius: 5px; padding: 15px; text-decoration: none; box-sizing: border-box; ">GO Back</a>`)
+
+
+    
+
+
+
 })
 
 // // For Multiple Button
